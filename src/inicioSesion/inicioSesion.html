@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inicio de Sesión</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="img/logo1.png" />
+    <link rel="stylesheet" href="estilosAngular/style.css">
+    <link rel="stylesheet" href="funciones.js">
+
+
+
+
+
+</head>
+<style>
+    .inicio {
+        background-color: #10312B;
+    }
+    
+    .fin {
+        background-image: url(img/footer.png);
+        width: 100%;
+        height: 200px;
+    }
+    
+    img {
+        border-radius: 50%;
+    }
+</style>
+
+
+
+<body>
+    <header class="inicio">
+        <h2 style="color: white;">Tu vacunación</h2>
+    </header>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6">
+            <div class="container">
+                <br>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home">Inicio de Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu1">Registro</a>
+                    </li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active"><br>
+                        <h3>Inicia Sesion</h3>
+
+                        <form>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Correo</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com"> </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="contraseña">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-5"> <button type="submit" class="btn btn-primary">Entrar</button></div>
+                            </div>
+
+
+                        </form>
+                        <hr>
+                        <h3>Inicio con Google</h3>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-5">
+                                <a href="javascript:ventanaSecundaria('https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&flowName=GlifWebSignIn&flowEntry=ServiceLogin')"><img src="../img/sesiongoogle.png" width="20%" height="100%"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+    <br>
+
+    <div class="fin"></div>
+
+
+</body>
+
+<script>
+    function ventanaSecundaria(URL) {
+        window.open(URL, "ventana1", "width=600,height=600,scrollbars=NO")
+    }
+</script>
+
+</html>

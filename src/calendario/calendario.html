@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Programacion de cita</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="img/logo1.png" />
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+<style>
+    .inicio {
+        background-color: #10312B;
+    }
+    
+    .fin {
+        background-image: url(../img/footer.png);
+        width: 100%;
+        height: 200px;
+    }
+    
+    hr {
+        border: none;
+        border-left: 1px solid hsla(200, 10%, 50%, 100);
+        height: 100vh;
+        width: 1px;
+    }
+    
+    img {
+        border-radius: 50%;
+    }
+</style>
+
+
+
+<body>
+    <header class="inicio">
+        <h2 style="color: white;">Tu vacunación</h2>
+    </header>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <h2>Selecciona tu cita</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <img src="../img/profile.jpeg" alt="Avatar" style="width:200px">
+                <h4>Danna Huicochea</h4>
+                <textarea id="w3review" name="w3review" rows="4" cols="30">
+Escoge tu fecha de cita 
+y lleva los documentos 
+que se piden
+                    </textarea>
+                <br>
+                <br>
+                <button type="button" class="btn btn-danger">Atras</button>
+                <button type="button" class="btn btn-success">Siguiente</button>
+            </div>
+            <hr>
+            <div class="col-8">
+                <div class="calendar">
+                    <div class="month">
+                        <h>Abril</h>
+                    </div>
+                    <table id="table-calendar">
+                        <tr>
+                            <th>Lun</th>
+                            <th>Mar</th>
+                            <th>Mie</th>
+                            <th>Jue</th>
+                            <th>Vie</th>
+                            <th>Sab</th>
+                            <th>Dom</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td tabindex="1">1</td>
+                            <td tabindex="2">2</td>
+                            <td tabindex="3">3</td>
+                            <td tabindex="4">4</td>
+                            <td tabindex="5">5</td>
+                            <td tabindex="6">6</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="7">7</td>
+                            <td tabindex="8">8</td>
+                            <td tabindex="9">9</td>
+                            <td tabindex="10">10</td>
+                            <td tabindex="11">11</td>
+                            <td tabindex="12">12</td>
+                            <td tabindex="13">13</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="14">14</td>
+                            <td tabindex="15">15</td>
+                            <td tabindex="16">16</td>
+                            <td tabindex="17">17</td>
+                            <td tabindex="18">18</td>
+                            <td tabindex="19">19</td>
+                            <td tabindex="20">20</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="21">21</td>
+                            <td tabindex="22">22</td>
+                            <td tabindex="23">23</td>
+                            <td tabindex="24">24</td>
+                            <td tabindex="25">25</td>
+                            <td tabindex="26">26</td>
+                            <td tabindex="27">27</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="28">28</td>
+                            <td tabindex="29">29</td>
+                            <td tabindex="30">30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <h6>Selecciona tu cita</h6>
+                <input type="date" />
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fin"></div>
+
+
+</body>
+
+
+</html>

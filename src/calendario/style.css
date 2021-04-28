@@ -1,0 +1,73 @@
+:root {
+    --bg-color: #4fe3c1;
+    --calendar-bg: #ffffff;
+    --num-color: #6d7173;
+    --month-color: #34393c;
+    --day-color: #9ba8b7;
+    --td-bg-hover-color: #edf2f5;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--month-color);
+    text-transform: capitalize;
+}
+
+.calendar {
+    height: 75vh;
+    width: 50vw;
+    background-color: var(--calendar-bg);
+}
+
+.month {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--day-color);
+}
+
+td {
+    text-align: center;
+    color: var(--num-color);
+    font-size: 15px;
+    padding: 20px;
+    transition: all .2s ease;
+}
+
+td:hover {
+    background-color: var(--td-bg-hover-color);
+}
+
+td:focus {
+    background-color: var(--bg-color);
+    color: var(--calendar-bg);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 900px) {
+    .calendar {
+        width: 100vw;
+        height: auto;
+    }
+}
